@@ -1,0 +1,36 @@
+h1{
+    color:#ffff00;
+    font-size:50px;
+    font-weight: bold;
+    font-family: "Impact";
+    text-align: center;
+    //background-color:yellow
+    background-color:#444444;
+}
+
+h2{
+     color:#ffff00;
+     text-align: center;
+     background-color:green
+}
+
+h3{
+    color: aqua;
+}
+
+h4{
+    color: aqua;
+}
+
+h5{
+     color:#ffff00;
+     text-align: center;
+     background-color:green
+}
+
+p{
+    color: blueviolet
+}
+
+body{
+    background-image: url(../images/04.jpg);
