@@ -1,10 +1,55 @@
-p{
-    color: red;
-    font-weight: bold;
+h1{
+  --interval: 1s;
+  display: block;
+  text-shadow: 
+    0 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4);
+  will-change: filter, color;
+  filter: saturate(90%);
+  animation: flicker steps(100) var(--interval) 1s infinite;
 }
 
-h1{
-    color: blue;
-    font-size:35px;
-    font-weight: bold;
+h1:nth-of-type(2) {
+  color: lightpink;
+  --color1: pink;
+  --color2: orangered;
+  --color3: red;
+  --color4: magenta;
+  font-family: fantasy;
+}
+
+h2{
+  --interval: 2s;
+  display: block;
+  text-shadow: 
+    0 0 10px var(--color1),
+    0 0 20px var(--color2),
+    0 0 40px var(--color3),
+    0 0 80px var(--color4);
+  will-change: filter, color;
+  filter: saturate(80%);
+  animation: flicker steps(100) var(--interval) 1s infinite;
+}
+
+h2:nth-of-type(4) {
+  color: lightyellow;
+  --color1: gold;
+  --color2: firebrick;
+  --color3: pink;
+  --color4: red;
+  font-family: cursive;
+}
+
+
+@keyframes flicker {
+  50% {
+    color: snow;
+    filter: saturate(20%) hue-rotate(80deg);
+  }
+}
+
+address{
+    background-color: snow
 }

@@ -1,0 +1,23 @@
+/*pタグの中でもbluecolorクラスのものだけ装飾　*/
+p.redcolor{
+    color:aqua;
+}
+/* h1タグの中でもkudoというidのやつだけ装飾　*/
+h1{
+     font-family: impact;
+    font-size: 60px;
+    text-align: center;
+    background-color:blue
+}
+
+h2{
+    color:red !important;
+}
+
+h2{
+    color:green;
+}
+
+h2{
+     text-align: center;
+}
